@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "strict": true,
+    "noEmit": true,
+    "skipLibCheck": true,
+    "types": ["bun"],
+    "paths": {
+      "plugify": ["./types/plugify.d.ts"],
+      ":s2sdk": ["./types/s2sdk.d.ts"]
+    }
+  },
+  "include": ["builder/**/*.ts", "plugins/**/*.ts", "types/**/*.d.ts"],
+  "exclude": ["node_modules", "dist"]
+}
